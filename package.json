@@ -15,8 +15,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib",
-    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
-    "build": "npm run clean && npm run lint && echo Using TypeScript && tsc --version && tsc --pretty",
+    "build": "npm run clean && tsc --pretty",
     "watch": "npm run build -- --watch"
   },
   "dependencies": {
@@ -29,7 +28,6 @@
     "@types/socket.io": "^1.4.29",
     "rimraf": "^2.0.0",
     "ts-node": "^3.0.0",
-    "tslint": "^5.0.0",
     "typescript": "^2.0.0"
   },
   "engines": {
