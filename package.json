@@ -1,0 +1,35 @@
+{
+  "name": "cast-status",
+  "version": "0.0.0",
+  "description": "cast-status",
+  "license": "MIT",
+  "repository": "",
+  "author": "",
+  "keywords": [
+    ""
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "build": "npm run clean && npm run lint && echo Using TypeScript && tsc --version && tsc --pretty",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.0",
+    "rimraf": "^2.0.0",
+    "ts-node": "^3.0.0",
+    "tslint": "^5.0.0",
+    "typescript": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
