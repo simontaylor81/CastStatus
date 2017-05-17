@@ -6,9 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = SocketIO(server);
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-});
+app.use(express.static(__dirname + '/../static'));
 
 io.on('connection', (socket : any) => {
     console.log('Something connected');
