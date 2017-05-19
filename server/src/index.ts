@@ -12,4 +12,8 @@ io.on('connection', (socket : any) => {
     console.log('Something connected');
 });
 
+app.get('/api/casts', (req, res) => {
+    res.json(['Kitchen', 'Living Room', 'All']);
+});
+
 server.listen(3001, () => console.log("Listening on *:3001"));
