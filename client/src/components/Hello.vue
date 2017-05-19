@@ -17,16 +17,24 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <h2>Casts</h2>
+    <ul>
+      <li v-for="cast in store.casts.casts">
+        {{cast}}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import store from '../store/index';
 
 @Component({})
 export default class Hello extends Vue {
   msg = 'Welcome to Your Vue.js App';
+  store = store;
 }
 </script>
 
