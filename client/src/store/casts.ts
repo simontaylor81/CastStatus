@@ -1,6 +1,14 @@
-class Casts {
-    casts: string[] = ['Kitchen', 'Living Room', 'All'];
-}
+import Cast from './cast';
 
-const casts = new Casts();
-export default casts;
+export default class CastSet {
+    casts: Cast[];
+
+    constructor() {
+        // TEMP
+        this.casts = ['Kitchen', 'Living Room', 'All'].map(name => {
+            let cast = new Cast();
+            cast.name = name;
+            return cast;
+        });
+    }
+}

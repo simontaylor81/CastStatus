@@ -19,8 +19,8 @@
     </ul>
     <h2>Casts</h2>
     <ul>
-      <li v-for="cast in store.casts.casts">
-        {{cast}}
+      <li v-for="cast in store.castSet.casts">
+        <cast-status v-bind:cast="cast"></cast-status>
       </li>
     </ul>
   </div>
@@ -29,9 +29,12 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import CastStatus from './CastStatus';
 import store from '../store/index';
 
-@Component({})
+@Component({
+  components: { CastStatus }
+})
 export default class Hello extends Vue {
   msg = 'Welcome to Your Vue.js App';
   store = store;

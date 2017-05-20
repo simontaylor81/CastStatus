@@ -1,5 +1,5 @@
-import casts from './casts';
+import CastSet from './casts';
 
 export default {
-    casts: casts
+    castSet: new CastSet()
 };
