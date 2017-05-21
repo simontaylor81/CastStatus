@@ -1,7 +1,13 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <section class="hero is-light is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <img src="./assets/logo.png">
+          <hello></hello>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -17,13 +23,9 @@ export default class App extends Vue {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import "~bulma/bulma";
+html {
+  overflow-y: hidden;
 }
 </style>
