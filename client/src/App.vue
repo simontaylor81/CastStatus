@@ -3,8 +3,7 @@
     <section class="hero is-light is-bold is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <img src="./assets/logo.png">
-          <hello></hello>
+          <cast-dashboard></cast-dashboard>
         </div>
       </div>
     </section>
@@ -14,10 +13,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import Hello from './components/Hello';
+import CastDashboard from './components/CastDashboard';
 
 @Component({
-  components: { Hello }
+  components: { CastDashboard }
 })
 export default class App extends Vue {
 }

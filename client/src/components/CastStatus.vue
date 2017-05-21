@@ -1,5 +1,7 @@
 <template>
-  <span>{{cast.name}}</span>
+  <div class="box">
+    <h1 class="title">{{cast.name}}</h1>
+  </div>
 </template>
 
 <script lang="ts">
